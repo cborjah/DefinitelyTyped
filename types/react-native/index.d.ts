@@ -7961,6 +7961,12 @@ export interface SwitchProps extends SwitchPropsIOS {
     disabled?: boolean;
 
     /**
+     * Callback that is called when when the user tries to change the
+     * value of the switch.
+     */
+    onChange?: () => void;
+
+    /**
      * Invoked with the new value when the value changes.
      */
     onValueChange?: (value: boolean) => void;
