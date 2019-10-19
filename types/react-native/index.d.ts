@@ -4614,6 +4614,10 @@ export interface ModalBaseProps {
      * The `onShow` prop allows passing a function that will be called once the modal has been shown.
      */
     onShow?: (event: NativeSyntheticEvent<any>) => void;
+    /**
+     * Used to locate this view in end-to-end tests.
+     */
+    testID?: string;
 }
 
 export interface ModalPropsIOS {
